@@ -54,7 +54,7 @@ public class RestCat implements CommandLineRunner {
         System.out.println("Enrolling for unit of choice(POST) ------------------------");
 
         Unit enrolledUnit = restTemplate.postForObject(
-                "http://10.51.10.111:1000/1/1/enroll/2",
+                "http://10.51.10.111:1000/" + createdStudent.getId() + "/1/ enroll/2",
                 null,
                 Unit.class);
 
